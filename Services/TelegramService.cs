@@ -38,7 +38,7 @@ namespace FinancialSystem.Services
 
             if (callbackQuery.Data.Contains("Guide"))
             {
-                await client.AnswerCallbackQueryAsync(callbackQuery.Id, "Никак, пошел нахуй.");
+                await client.AnswerCallbackQueryAsync(callbackQuery.Id, "Как-нибудь...");
                 return;
             }
             await client.SendTextMessageAsync(callbackQuery.Message.Chat.Id, "Помощь в использовании: /help" +
